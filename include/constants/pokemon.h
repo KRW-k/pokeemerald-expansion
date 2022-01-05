@@ -278,12 +278,12 @@
 #define MAX_PER_STAT_IVS 31
 #define MAX_IV_MASK 31
 #define USE_RANDOM_IVS (MAX_PER_STAT_IVS + 1)
-#define MAX_PER_STAT_EVS 255
-#define MAX_TOTAL_EVS 510
+#define MAX_PER_STAT_EVS 0 // Max of 0 EVs per stat
+#define MAX_TOTAL_EVS 0 // Remove EVs (hopefully)
 #if I_VITAMIN_EV_CAP >= GEN_8
 #define EV_ITEM_RAISE_LIMIT MAX_PER_STAT_EVS
 #else
-#define EV_ITEM_RAISE_LIMIT 100
+#define EV_ITEM_RAISE_LIMIT 0 // Account for vitamins, they'll either become unaccessable or do something else anyway
 #endif
 
 // Battle move flags

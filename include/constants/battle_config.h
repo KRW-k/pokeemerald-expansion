@@ -112,7 +112,7 @@
 #define B_RECALCULATE_STATS         GEN_7 // In Gen5+, the stats of the Pokémon who participate in battle are recalculated at the end of each battle.
 
 // Damage settings
-#define B_BURN_DAMAGE               GEN_7 // In Gen7+, burn damage is 1/16th of max HP instead of 1/8th.
+#define B_BURN_DAMAGE               GEN_5 // In Gen7+, burn damage is 1/16th of max HP instead of 1/8th.
 #define B_BINDING_DAMAGE            GEN_7 // In Gen6+, binding damage is 1/8 of max HP instead of 1/16. (With Binding Band, 1/6 and 1/8 respectively.)
 #define B_PSYWAVE_DMG               GEN_7 // Psywave's damage formula. See Cmd_psywavedamageeffect.
 #define B_PAYBACK_SWITCH_BOOST      GEN_7 // In Gen5+, if the opponent switches out, Payback's damage will no longer be doubled.
@@ -163,7 +163,7 @@
 #define B_RAMPAGE_CANCELLING        GEN_7 // In Gen5+, a failed Thrash, etc, will cancel except on its last turn.
 
 // Ability settings
-#define B_ABILITY_WEATHER           GEN_7 // In Gen6+, ability-induced weather lasts 5 turns. Before, it lasted until the battle ended or until it was changed by a move or a different weather-affecting ability.
+#define B_ABILITY_WEATHER           GEN_5 // In Gen6+, ability-induced weather lasts 5 turns. Before, it lasted until the battle ended or until it was changed by a move or a different weather-affecting ability.
 #define B_GALE_WINGS                GEN_7 // In Gen7+ requires full HP to trigger.
 #define B_STANCE_CHANGE_FAIL        GEN_7 // In Gen7+, Stance Change fails if the Pokémon is unable to use a move because of confusion, paralysis, etc. In Gen6, it doesn't.
 #define B_SHADOW_TAG_ESCAPE         GEN_7 // In Gen4+, if both sides have a Pokémon with Shadow Tag, all battlers can escape. Before, neither side could escape this situation.
@@ -179,7 +179,7 @@
 #define B_X_ITEMS_BUFF              GEN_7 // In Gen7+, the X Items raise a stat by 2 stages instead of 1.
 #define B_MENTAL_HERB               GEN_5 // In Gen5+, the Mental Herb cures Infatuation, Taunt, Encore, Torment, Heal Block, and Disable
 #define B_TRAINERS_KNOCK_OFF_ITEMS  TRUE  // If TRUE, trainers can steal/swap your items (non-berries are restored after battle). In vanilla games trainers cannot steal items.
-#define B_SOUL_DEW_BOOST            GEN_7 // In Gens3-6, Soul Dew boosts Lati@s' Sp. Atk and Sp. Def. In Gen7+ it boosts the power of their Psychic and Dragon type moves instead.
+#define B_SOUL_DEW_BOOST            GEN_6 // In Gens3-6, Soul Dew boosts Lati@s' Sp. Atk and Sp. Def. In Gen7+ it boosts the power of their Psychic and Dragon type moves instead.
 #define B_NET_BALL_MODIFIER         GEN_7 // In Gen7+, Net Ball's catch multiplier is x5 instead of x3.
 #define B_DIVE_BALL_MODIFIER        GEN_7 // In Gen4+, Dive Ball's effectiveness increases by when Surfing or Fishing.
 #define B_NEST_BALL_MODIFIER        GEN_7 // Nest Ball's formula varies depending on the Gen. See Cmd_handleballthrow.
@@ -228,7 +228,7 @@
 #define B_LAST_USED_BALL_BUTTON     R_BUTTON // If last used ball is implemented, this button (or button combo) will trigger throwing the last used ball.
 
 // Other
-#define B_DOUBLE_WILD_CHANCE        0     // % chance of encountering two Pokémon in a Wild Encounter.
+#define B_DOUBLE_WILD_CHANCE        100     // % chance of encountering two Pokémon in a Wild Encounter.
 
 // Animation Settings
 #define B_NEW_SWORD_PARTICLE            FALSE    // If set to TRUE, it updates Swords Dance's particle.
